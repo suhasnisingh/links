@@ -2,16 +2,55 @@
 <html>
   <head>
     <title>Suhasni's Linktree</title>
-    <!-- where we tell the browser how to process the document: -->
-        <!-- what title to put in the browser tab -->
-        <!-- what style sheets to load -->
-        <!-- what language to use -->
-          <!-- we will always use a character set called UTF-8 -->
-          <!-- UTF-8 allows for all languages as well as things like emoji -->
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #b2f5f1;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .name {
+        color: #148080;
+      }
+
+      .social-icons a {
+        color: #148080;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #ffda74;
+      }
+
+      .link a {
+        color: #fd7425;
+        text-decoration: none;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+      }
+    </style>
   </head>
   <body>
+
+    <div class="items">
     <div class="banner">
-      <img src="/thumbnails/pizza.jpg" alt="banner image">
+      <img src="/thumbnails/pizza.jpg" alt="banner image" class="banner-image">
     </div>
 
     <div class="name">
@@ -35,25 +74,25 @@
 
     <div class="link">
       <img
-        src="/thumbnails/map.jpg">
+        src="/thumbnails/map.jpg" class="thumbnail">
 
       <a target="_blank" href="https://www.rome2rio.com/">The best tool for long-distance travel</a>
     </div>
 
     <div class="link">
       <img
-        src="/thumbnails/icons.jpg">
+        src="/thumbnails/icons.jpg" class="thumbnail">
 
       <a target="_blank" href="https://thenounproject.com/">Beautiful, free icons for any design project</a>
     </div>
 
     <div class="link">
       <img
-        src="/thumbnails/diary.jpg">
+        src="/thumbnails/diary.jpg" class="thumbnail">
 
       <a target="_blank" href="https://www.youtube.com/">Long-form analysis of a cinematic masterpiece</a>
     </div>
-
-    <!-- Etc, for as many links as you want -->
+    </div>
+  
   </body>
 </html>
