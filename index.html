@@ -7,6 +7,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #b2f5f1;
+        display: flex;
+        justify-content: center;
       }
       .banner-image {
         width: 128px;
@@ -22,6 +24,18 @@
       }
       .name {
         color: #148080;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
       }
 
       .social-icons a {
@@ -31,11 +45,16 @@
 
       .link {
         background-color: #ffda74;
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
 
       .link a {
         color: #fd7425;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
 
       .items {
@@ -43,6 +62,7 @@
         flex-direction: column;
         gap: 30px;
         max-width: 640px;
+        flex-grow: 1;
       }
     </style>
   </head>
